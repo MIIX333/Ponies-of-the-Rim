@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Unicorn</defName>
 		<label>unicorn</label>
-		<description><![CDATA[Ponies are magical quadruped creatures from the planet Phoenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
 
 The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
 
@@ -57,7 +57,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
-							<name>skin</name>
+							<name>skin</name> <!-- Don't translate! Will break opacity -->
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
@@ -79,7 +79,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							</first>
 						</li>
 						<li>
-							<name>hair</name>
+							<name>hair</name> <!-- Don't translate! Will break opacity -->
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
@@ -88,14 +88,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 									</li>
 								</options>
 							</first>
-							<second Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<min>RGB(35, 35, 35, 255)</min>
-										<max>RGB(255, 255, 255, 255)</max>
-									</li>
-								</options>
-							</second>
 						</li>
 					</colorChannels>
 					<bodyAddons>
@@ -111,14 +103,17 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<RotStage>Fresh,Rotting</RotStage>
 								<BodyPart>
 									<bodyPart>Pony_Horn</bodyPart>
+									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
 							</conditions>
-							<!--<extendedGraphics>
-								<Hediff For="MissingBodyPart">Things/Races/Pony/Horns/Unicorn_Broken</Hediff>
-								<Age For="Baby"Things/Races/Pony/Horns/Unicorn_Baby</Age>
-								<Age For="Child"Things/Races/Pony/Horns/Unicorn_Baby</Age>
-								<Age For="PreTeenager"Things/Races/Pony/Horns/Unicorn_Baby</Age>
-							</extendedGraphics>-->
+							<extendedGraphics>
+								<Hediff For="MissingBodyPart">Things/Races/Wounds/Horns/Unicorn_Broken</Hediff>
+								<Hediff For="BionicHorn">Things/Races/Wounds/Horns/Unicorn_Bionic</Hediff>
+								<Hediff For="ArchotechHorn">Things/Races/Wounds/Horns/Unicorn_Archotech</Hediff>
+								<Age For="PonyBaby">Things/Races/Pony/Horns/Unicorn_Baby</Age>
+								<Age For="PonyChild">Things/Races/Pony/Horns/Unicorn_Baby</Age>
+								<Age MayRequire="Ludeon.RimWorld.Biotech" For="PonyPreTeenager">Things/Races/Pony/Horns/Unicorn_Baby</Age>
+							</extendedGraphics>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -129,9 +124,9 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<styleTagsOverride>
-							<li>Pony</li>
-						</styleTagsOverride>
+						<bannedTags>
+							<li>HairLong</li>
+						</bannedTags>
 					</value>
 				</li>
 				<li>
@@ -157,6 +152,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 				<head>
 					<path>Things/Races/Pony/Heads/</path>
 					<extendedGraphics>
+					<!-- Mutants -->
 						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">
 							<path>Things/Races/Pony/Heads/Male_Pony</path>
 							<extendedGraphics>
@@ -169,6 +165,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
 							</extendedGraphics>
 						</Mutant>
+					<!-- Normal -->
 						<Gender For="Male">Things/Races/Pony/Heads/Male_Pony</Gender>
 						<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
 					</extendedGraphics>

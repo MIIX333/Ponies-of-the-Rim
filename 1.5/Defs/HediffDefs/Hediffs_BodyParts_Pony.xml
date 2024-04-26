@@ -146,6 +146,7 @@
 		<label>wing</label>
 		<labelNoun>a pegasus wing</labelNoun>
 		<description>A natural pegasus wing.</description>
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
@@ -239,7 +240,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<WorkSpeedGlobal>0.75</WorkSpeedGlobal>
+					<WorkSpeedGlobal>0.075</WorkSpeedGlobal>
 					<MoveSpeed>0.25</MoveSpeed>
 				</statOffsets>
 			</li>
@@ -364,6 +365,8 @@
 		<labelNoun>a unicorn horn</labelNoun>
 		<description>A natural unicorn horn.</description>
 		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>NaturalHorn</spawnThingOnRemoved>
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
@@ -380,7 +383,7 @@
 		<description>A biological unicorn horn. Gives the ability to cast magic.</description>
 		<descriptionHyperlinks><RecipeDef>InstallNaturalHorn</RecipeDef></descriptionHyperlinks>
 		<statBases>
-			<MarketValue>750</MarketValue>
+			<MarketValue>500</MarketValue>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
