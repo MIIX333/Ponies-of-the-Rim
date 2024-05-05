@@ -228,4 +228,126 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+<!-- Messy -->
+	<HairDef>
+		<defName>Pony_MessyHair</defName>
+		<label>Messy</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Pony_Messy</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Pommel -->
+<HairDef>
+	<defName>Pony_PommelHair</defName>
+	<label>Pommel</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Pommel</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Gleam -->
+<HairDef>
+	<defName>Pony_GleamHair</defName>
+	<label>Gleam</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Gleam</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Chime -->
+<HairDef>
+	<defName>Pony_ChimeHair</defName>
+	<label>Chime</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Chime</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Babs -->
+<HairDef>
+	<defName>Pony_BabsHair</defName>
+	<label>Babs</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Babs</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Geologist -->
+<HairDef>
+	<defName>Pony_GeologistHair</defName>
+	<label>Geologist</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Geologist</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Chello -->
+<HairDef>
+	<defName>Pony_ChelloHair</defName>
+	<label>Chello</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Chello</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Lighting -->
+<HairDef>
+	<defName>Pony_LightningHair</defName>
+	<label>Lightning</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Lightning</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Breeze -->
+<HairDef>
+	<defName>Pony_BreezeHair</defName>
+	<label>Breeze</label>
+	<styleGender>Any</styleGender>
+	<texPath>Things/Races/Pony/Hair/Breeze</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Nocturnal -->
+<HairDef>
+	<defName>Pony_NocturnalHair</defName>
+	<label>Nocturnal</label>
+	<styleGender>Male</styleGender>
+	<texPath>Things/Races/Pony/Hair/Nocturnal</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- Horselick -->
+<HairDef>
+	<defName>Pony_HorselickHair</defName>
+	<label>Horselick</label>
+	<styleGender>Male</styleGender>
+	<texPath>Things/Races/Pony/Hair/Horselick</texPath>
+	<category>Pony</category>
+	<hairTags>
+		<li>Pony</li>
+	</hairTags>
+</HairDef>
+<!-- END OF DEFS TAG DO NOT REMOVE OR EXCEED -->
 </Defs>
